@@ -69,6 +69,36 @@ CREATE TABLE IF NOT EXISTS users (
     role VARCHAR(50) NOT NULL
 );
 ```
+### Database Schema
+
+The `users` table contains the following columns:
+
+| Column | Data Type | Description |
+|---|---|---|
+| `id` | INT, AUTO_INCREMENT | Unique identifier for each user |
+| `name` | VARCHAR(100) | User's name |
+| `email` | VARCHAR(150) | User's email address |
+| `role` | VARCHAR(50) | User's role |
+
+### Populate the Database with Sample Data
+
+Insert sample users using the following SQL statement:
+
+```sql
+INSERT INTO users (name, email, role)
+VALUES
+    ('Rahul Sharma', 'rahul.sharma@example.com', 'Developer'),
+    ('Priya Verma', 'priya.verma@example.com', 'Designer'),
+    ('Aman Singh', 'aman.singh@example.com', 'Tester');
+```
+
+Run this SQL statement once to add the sample records.
+
+To verify that the records were inserted successfully, run:
+
+```sql
+SELECT * FROM users;
+```
 
 Configure the MySQL database connection in `new_project/settings.py` using your own database credentials.
 
