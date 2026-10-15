@@ -4,7 +4,7 @@ from .models import User
 
 
 def hello(request):
-    return HttpResponse("Hello, World!")
+    return HttpResponse("Hello World!")
 
 
 def user_list(request):
