@@ -188,3 +188,89 @@ http://127.0.0.1:8000/
 - Configure the database connection before running the application.
 - Keep database credentials private.
 - Activate the Python virtual environment whenever you work on the project.
+
+- ## Git Workflow and Contributing
+
+Contributions to this project should follow a simple Git workflow to keep changes organized and make code review easier.
+
+### 1. Clone the Repository
+
+Clone the repository to your local computer:
+
+```bash
+git clone https://github.com/yuvrajraghu2303-ux/django-user-management-system.git
+cd django-user-management-system
+```
+
+### 2. Create a New Branch
+
+Create a separate branch for your changes instead of working directly on the `main` branch.
+
+```bash
+git switch main
+git pull origin main
+git switch -c feature/describe-your-change
+```
+
+Replace `describe-your-change` with a short description of your proposed change.
+
+### 3. Make and Test Changes
+
+Make the required changes to the code or documentation.
+
+Before committing, review your changes and test the application where applicable.
+
+```bash
+git status
+git diff
+```
+
+### 4. Commit Your Changes
+
+Stage the files you changed. For example, to stage the README:
+
+```bash
+git add README.md
+```
+
+Create a commit with a descriptive message:
+
+```bash
+git commit -m "Describe the changes made"
+```
+
+Use a commit message that clearly explains the purpose of your changes.
+
+### 5. Push Your Branch to GitHub
+
+Upload your branch to the remote repository:
+
+```bash
+git push -u origin feature/describe-your-change
+```
+
+Replace `feature/describe-your-change` with the name of your actual branch.
+
+### 6. Create a Pull Request
+
+On GitHub:
+
+1. Open the repository.
+2. Select **Pull requests**.
+3. Click **New pull request**.
+4. Select `main` as the base branch and your feature branch as the compare branch.
+5. Describe your changes and submit the pull request.
+
+### 7. Code Review
+
+Review the proposed changes, address any feedback, and push additional commits to the same branch when necessary.
+
+Changes should be merged into `main` after the review process is complete.
+
+### Contribution Guidelines
+
+- Keep changes focused on a specific task.
+- Use clear, descriptive commit messages.
+- Test changes before submitting a pull request.
+- Do not commit passwords, database credentials, or other sensitive information.
+- Include relevant setup or documentation updates when necessary.
