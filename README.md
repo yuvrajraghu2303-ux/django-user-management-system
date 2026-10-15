@@ -23,6 +23,11 @@ A Django web application that uses MySQL to manage user records.
 
 ```bash
 git clone -b steptech_assignment https://github.com/yuvrajraghu2303-ux/django-user-management-system.git
+```
+
+Navigate to the project directory:
+
+```bash
 cd django-user-management-system/new_project/new_project
 ```
 
@@ -43,14 +48,16 @@ pip install Django mysqlclient
 
 Install and start MySQL Server.
 
-Create a MySQL database named `users` and ensure it contains a `users` table with these columns:
+Create a MySQL database named `users` and ensure it contains a `users` table with the following columns:
 
 - `id`
 - `name`
 - `email`
 - `role`
 
-Configure your database connection in `new_project/settings.py` using your own MySQL credentials. Do not publish passwords or other sensitive credentials.
+Configure the database connection in `new_project/settings.py` using your MySQL credentials.
+
+**Important:** Do not publish database passwords or other sensitive credentials.
 
 ### 5. Run the Application
 
@@ -61,7 +68,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Open http://127.0.0.1:8000/ in your browser.
+Open the application in your browser:
+
+http://127.0.0.1:8000/
 
 ## Application URLs
 
