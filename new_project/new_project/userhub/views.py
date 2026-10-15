@@ -4,7 +4,11 @@ from .models import User
 
 
 def hello(request):
-    return HttpResponse("Hello, World!")
+<<<<<<< HEAD
+    return HttpResponse("Hello World!")
+=======
+    return HttpResponse("Hello World")
+>>>>>>> ab819e8 (Match hello endpoint response to assignment)
 
 
 def user_list(request):
@@ -34,3 +38,7 @@ def user_detail(request, id):
 
 def about(request):
     return HttpResponse("This is the About Page.")
+<<<<<<< HEAD
+=======
+
+>>>>>>> ab819e8 (Match hello endpoint response to assignment)
